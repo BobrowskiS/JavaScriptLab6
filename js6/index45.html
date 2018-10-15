@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+
+</head>
+
+<body>
+  <script>
+		function checkAge(age){
+		var age = prompt('Ваш возраст?');
+		if(age>0){
+		if(age>=18){
+		alert ('Доступ разрешен');
+		return true;
+		}
+		else if(age < 18){
+		 var a = prompt('Родители разрешили? (да, нет)');
+		 if(a == 'да')
+		 alert ('Доступ разрешен');
+		}	
+		else 
+		alert('В доступе отказано');
+		//}else{
+		//alert('В доступе отказано');
+		
+		//return confirm('Родители разрешили?');
+		
+		}
+		else alert('В доступе отказано');
+		}
+		
+	checkAge();
+		
+ </script> 
+</div>
+</body>
+</html>
