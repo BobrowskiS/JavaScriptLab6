@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Index45</title>
+    </head>
+    <body>
+       <script>
+         var age = prompt('Пожалуйста, введите ваш возраст:');
+         
+         function checkAge(age) {
+             if (age >= 18) {
+                 return true;
+             } else return confirm('Родители разрешили?');
+         }
+         if(isNaN(age) || age==' ' || age=='' || age<=0 || age>140)
+            alert('Вы ввели некорректное значение!');
+         else if (checkAge(age)) alert('Доступ разрешен!');
+             else alert('В доступе отказано!');
+       </script>
+    </body>
+</html>
